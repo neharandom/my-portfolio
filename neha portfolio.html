@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/Neha/OneDrive/Desktop/my%20portfolio%20using%20html%20css.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <link rel="stylesheet" href="./neha portfolio_files/styles.css">
+    <a href="http://127.0.0.1:5500/html%20basics/index.html">
+        <button class="button">
+            About
+        </button>
+    </a>
+    <a href="http://127.0.0.1:5500/html%20basics/index.html">
+        <button class="button">
+            Skills
+        </button>
+    </a>
+    <a href="http://127.0.0.1:5500/html%20basics/index.html">
+        <button class="button">
+            Project
+        </button>
+    </a>
+    <a href="http://127.0.0.1:5500/html%20basics/index.html">
+        <button class="button">
+            Contact
+        </button>
+    </a>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Thummalapally Neha</h1>
+            <img src="./neha portfolio_files/neha.png" alt="A photo of me">
+            <p>I am a passionate web developer with a focus on front-end technologies. </p>
+        
+            <p>I am currently pursuing my B.Tech in <em>Sri Indu College of Engineering and Technology</em></p>
+            <p>I have learnt Web Development</p>
+            <p>You can <strong>click here</strong> to Checkout What i have learnt in HTML CSS JS.</p>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <ol>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Python Basics</li>
+              <li>Javascript Basics</li>
+            </ol>
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <table border="1">
+                <tbody><tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>I have built a Portfolio websiteby using HTML and CSS</td>
+                </tr>
+                <tr>
+                    <td>Python Simple Calculator</td>
+                    <td>I have built a simple calculator</td>
+                </tr>
+
+            </tbody></table>
+
+        </section>
+        <section id="contact">
+    <h1>Contact Me</h1>
+    <p>Feel free to get in touch with me using the form below:</p>
+    <form action="http://127.0.0.1:5500/html%20basics/index.html">
+        <label for="name">Name:</label>
+        <input type="text">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email">
+        <br>
+
+        <b>Choose your gender:</b>
+        <input type="radio" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+
+
+        <b>Select your interests:</b>
+        <input type="checkbox" id="coding" value="coding">
+        <label for="Coding">Coding</label>
+        <input type="checkbox" id="reading" value="reading">
+        <label for="reading">Reading</label>
+
+        <br>
+        <label for="bio">Bio (up to 200 characters):</label>
+        <input type="text">
+        <br>
+    
+        <button type="submit" class="submit">Submit</button>
+
+    </form>
+</section>
+</main>
+<button class="fixedButton">TOP</button>
+<footer>
+    <p>@ 2025 My Portfolio</p>
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
